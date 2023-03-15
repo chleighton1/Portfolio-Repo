@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs."
+    />
+    <link rel="icon" href="../static/img/favicon.png" />
+    <link rel="apple-touch-icon" href="..static/img/apple-touch-icon.png" />
+    <link rel="manifest" href="../static/manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/style.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/general.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/queries.css')}}"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <script defer src="../static/js/script.js"></script>
+
+    <title>Charles Leighton</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img
+          class="logo"
+          src="../static/img/CL_Icon.png"
+          alt="Charles Leighton logo"
+      /></a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#about">About</a></li>
+          <li>
+            <a class="main-nav-link" href="#projects">Projects</a>
+          </li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero container grid grid--2-cols grid--center--v">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">Hi, I'm Charles</h1>
+            <p class="hero-description">
+              Transforming complex problems into elegant solutions with code -
+              showcasing a portfolio of innovative software engineering
+              projects.
+            </p>
+            <a href="#about" class="btn btn--full">Learn More &darr;</a>
+          </div>
+
+          <div class="hero-img-box">
+            <picture>
+              <source srcset="../static/img/Cover_comp.png" type="image/png" />
+              <img
+                src="../static/img/Cover_comp.png"
+                class="hero-img"
+                alt="Close up of LED light strips"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="section-about" id="about">
+        <div class="container">
+          <span class="subheading">About Me</span>
+        </div>
+        <div class="container grid grid--2-cols grid--center--v">
+          <!-- SETP 01 -->
+          <div class="about-text-box">
+            <p class="about-description">
+              Hey there, I'm Charles - <br />I have over two years of experience
+              writing Python/SQL/C/HTML/CSS and am comfortable working with
+              libraries such as Pandas, Beautiful Soup, and Selenium. Before
+              software engineering, I worked in Post Production for film/TV,
+              which sparked my passion for software engineering. I'm a hard
+              worker, a team player, and enjoy solving problems. Thanks for
+              stopping by, and I look forward to working with you.
+            </p>
+          </div>
+          <div class="about-img-box">
+            <img
+              src="../static/img/Charles.jpg"
+              alt="Photo of Charles Leighton"
+              class="about-img"
+            />
+          </div>
+        </div>
+
+        <div class="section-skills" id="skills">
+          <div class="container grid grid--3-cols">
+            <div class="skills">
+              <div class="skill-type">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="skill-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"
+                  />
+                </svg>
+
+                <h2 class="skill">Languages</h2>
+              </div>
+              <ul class="list">
+                <li class="list-item">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="list-icon"
+                  ></ion-icon
+                  ><span>Python</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="list-icon"
+                  ></ion-icon
+                  ><span>SQL</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="list-icon"
+                  ></ion-icon
+                  ><span>HTML / CSS</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="list-icon"
+                  ></ion-icon
+                  ><span>C</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="list-icon"
+                  ></ion-icon
+                  ><span>JavaScript</span>
+                </li>
+              </ul>
+            </div>
+            <div class="skills">
+              <div class="skill-type">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="skill-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z"
+                  />
+                </svg>
+
+                <h2 class="skill">Libraries</h2>
+              </div>
+              <ul class="list">
+                <li class="list-item">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="list-icon"
+                  ></ion-icon
+                  ><span>Flask</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="list-icon"
+                  ></ion-icon
+                  ><span>Pandas</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="list-icon"
+                  ></ion-icon
+                  ><span>NumPy</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="list-icon"
+                  ></ion-icon
+                  ><span>Matplotlib</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="list-icon"
+                  ></ion-icon
+                  ><span>BeautifulSoup</span>
+                </li>
+              </ul>
+            </div>
+            <div class="skills">
+              <div class="skill-type">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="skill-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
+                  />
+                </svg>
+
+                <h2 class="skill">Dev Tools</h2>
+              </div>
+              <ul class="list">
+                <li class="list-item">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="list-icon"
+                  ></ion-icon
+                  ><span>Mac OS X</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="list-icon"
+                  ></ion-icon
+                  ><span>Windows</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="list-icon"
+                  ></ion-icon
+                  ><span>Git / Github</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="list-icon"
+                  ></ion-icon
+                  ><span>Visual Studio Code</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon
+                    name="checkmark-outline"
+                    class="list-icon"
+                  ></ion-icon
+                  ><span>Pycharm</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-projects" id="projects">
+        <div class="container center-text">
+          <h2 class="heading-secondary">Here are some of my projects</h2>
+        </div>
+        <div class="container grid grid--3-cols margin-bottom-md">
+          <div class="project">
+            <a
+              href="https://taskninja.herokuapp.com/"
+              onclick="window.open('https://taskninja.herokuapp.com/', '_self')"
+              class="project-link"
+            >
+              <img
+                src="../static/img/TaskNinja.png"
+                class="project-img"
+                alt="Screenshot of Task Ninja web"
+              />
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="tag tag--python">Python</span>
+                  <span class="tag tag--html">HTML</span>
+                  <span class="tag tag--css">CSS</span>
+                </div>
+                <p class="project-title">Task Ninja</p>
+                <div class="project-description">
+                  <p>
+                    Web app that allows users to create daily tasks and monthly
+                    goals. Includes an API Quote of The Day feature as well as a
+                    calendar for scheduling future tasks and goals.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="project">
+            <a
+              href="https://github.com/chleighton1/Text_to_MC"
+              onclick="window.open('https://github.com/chleighton1/Text_to_MC', '_self')"
+              class="project-link"
+            >
+              <img
+                src="../static/img/morse_code.jpeg"
+                class="project-img"
+                alt="Computer screen with code on it"
+              />
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="tag tag--python">Python</span>
+                </div>
+                <p class="project-title">Morse Code Generator</p>
+                <div class="project-description">
+                  <p>
+                    Command line program that takes a user input of text,
+                    converts and outputs the Morse code equivalent of the input
+                    text message.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="project">
+            <a
+              href="{{ url_for('octopus') }}"
+              onclick="window.location.href='{{ url_for( 'octopus') }}', '_self';"
+              class="project-link"
+            >
+              <img
+                src="../static/img/OctopusFS.png"
+                class="project-img"
+                alt="Screenshot of Octopus game"
+              />
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="tag tag--scratch">Scratch</span>
+                </div>
+                <p class="project-title">Octopus Fruit Snack</p>
+                <div class="project-description">
+                  <p>
+                    Interactive game where you play as an Octopus. You gain
+                    points from eating fruit but lose points if you hit a crab
+                    and its Game Over if you get eaten by a Shark.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="container all-projects">
+          <a
+            href="https://www.github.com/chleighton1"
+            onclick="window.open('https://www.github.com/chleighton1')"
+            class="link"
+            >See all projects &rarr;</a
+          >
+        </div>
+      </section>
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Get in Touch</h2>
+              <p class="cta-text">
+                Thanks for taking the time to check out my portfolio! If you're
+                interested in working together or have any questions, feel free
+                to reach out. I'm always open to new opportunities and would
+                love to hear from you!
+              </p>
+              <a
+                href="mailto:chleighton1@gmail.com"
+                target="_top"
+                class="btn btn--form send-mail"
+                >Send Message!</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-col">
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/charlesleighton/"
+            onclick="window.open('https://www.linkedin.com/in/charlesleighton/', '_self')"
+            class="footer-link"
+            ><ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
+          </a>
+          <a
+            href="https://www.github.com/chleighton1"
+            onclick="window.open('https://www.github.com/chleighton1', '_self')"
+            class="footer-link"
+            ><ion-icon class="social-icon github" name="logo-github"></ion-icon>
+          </a>
+
+          <a
+            href="https://www.instagram.com/leighton.live/"
+            onclick="window.open('https://www.instagram.com/leighton.live/', '_self')"
+            class="footer-link"
+            ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+          ></a>
+        </div>
+        <p class="footer-header">
+          Designed & Built by Charles Leighton &copy; <span class="year"></span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

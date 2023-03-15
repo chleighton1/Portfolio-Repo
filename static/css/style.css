@@ -1,0 +1,386 @@
+/* - SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
+
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* **************************** */
+/* HEADER */
+/* **************************** */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+
+  /* Because we want it to be sticky later */
+  height: 9.6rem;
+  padding: 0 9.6rem;
+  position: relative;
+}
+
+.logo {
+  height: 8rem;
+}
+
+/* **************************** */
+/* NAVIGATION */
+/* **************************** */
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #0e1a3b;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #1473df;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #f8f9fa;
+  background-color: #0e1a3b;
+  border: 3px solid #0e1a3b;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #f8f9fa;
+  color: #0e1a3b;
+  border: 3px solid #0e1a3b;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/* STICKY NAVIGATION */
+
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #f8f9fa;
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.04);
+}
+
+/* **************************** */
+/* HERO SECTION */
+/* **************************** */
+
+.section-hero {
+  background-color: #f8f9fa;
+  padding: 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  gap: 9.6rem;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 120%;
+}
+
+/* **************************** */
+/* ABOUT SECTION */
+/* **************************** */
+
+.section-about {
+  padding: 9.6rem 0;
+  /* background-color: #0e1a3b; */
+  background-image: linear-gradient(to right bottom, #0e1a3b, #6988bf);
+}
+
+.about-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #f3f3f2;
+}
+
+.about-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.about-img {
+  width: 50%;
+  border-radius: 50%;
+  border: 2.4rem solid #26314f;
+}
+
+/* **************************** */
+/* SKILLS SUB=SECTION */
+/* **************************** */
+
+.skill {
+  text-align: center;
+  padding: 2.4rem 4.8rem;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.section-skills {
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  margin: 0 auto;
+  padding: 3.2rem 6.4rem;
+  width: 75%;
+}
+
+.skill-icon {
+  height: 4.8rem;
+  display: block;
+  margin: 0 auto;
+}
+
+/* **************************** */
+/* PROJECTS SECTION */
+/* **************************** */
+
+.section-projects {
+  padding: 9.6rem 0;
+}
+
+.project {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.project:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.project:active {
+  transform: translateY(-0.8rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.project-content {
+  padding: 3.2rem 3.2rem 4.8rem 3.2rem;
+}
+
+.project-tags {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.tag--python {
+  background-color: #3572a5;
+}
+
+.tag--html {
+  background-color: #e34c26;
+}
+
+.tag--css {
+  background-color: #563e7c;
+}
+
+.tag--javascript {
+  background-color: #f1e05a;
+}
+
+.tag--scratch {
+  background-color: #f8a936;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #f3f3f2;
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+.project-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.project-link {
+  color: inherit;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.project-description {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.project-img {
+  width: 100%;
+  border-bottom: 1px solid rgb(118, 118, 118, 0.2);
+}
+
+.all-projects {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/* **************************** */
+/* OCTOPUS SECTION */
+/* **************************** */
+
+.octopus {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4.8rem;
+  align-items: center;
+  margin: 8rem 0;
+}
+
+.back-btn {
+  font-size: 4.8rem;
+  color: #0a1d48;
+}
+
+/* **************************** */
+/* CTA SECTION */
+/* **************************** */
+
+.section-cta {
+  padding: 4.8rem 0 12.8rem;
+}
+
+.cta {
+  /* background-color: #150B52; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+
+  background-image: linear-gradient(to right bottom, #0a1d48, #6988bf);
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #f8f9fa;
+  text-align: center;
+}
+
+.cta .heading-secondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+  letter-spacing: 1.2px;
+  color: #f8f9fa;
+  font-weight: 200;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgb(253, 242, 233, 0.5);
+}
+
+.mailto {
+  display: block;
+}
+
+/* **************************** */
+/* FOOTER */
+/* **************************** */
+
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 2.4rem;
+  padding-bottom: 3.2rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.footer-header {
+  color: #767676;
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #0a1d48;
+}
